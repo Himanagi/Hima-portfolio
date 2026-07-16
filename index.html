@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hima's Portfolio — Developer, Designer, Creator">
+  <title>Hima | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Hima<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1>Hima <span class="accent">Nagi Reddy</span></h1>
+          <p>
+          I'm a Computer Science graduate and full-stack developer passionate about building
+          modern web applications and creating software that makes a real impact.
+          </p>
+          <div class="hero-buttons">
+            <a href="projects.html" class="btn btn-primary">View My Work</a>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+    
+        <button type="button" class="resume-card" id="resume-btn" aria-label="Preview resume">
+          <div class="resume-preview-image">
+            <img src="images/resume-preview.png" alt="Resume preview">
+            <div class="resume-overlay">
+              <span class="btn btn-primary">Preview Resume</span>
+            </div>
+          </div>
+          <div class="resume-card-body">
+            <h3>My Resume</h3>
+            <p>Click to preview, download, or open in a new tab.</p>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Quick Highlights -->
+    <section class="highlights-section">
+      <div class="container">
+        <p class="section-label">What I Do</p>
+        <h2 style="margin-bottom: 2.5rem;">A glimpse into my work</h2>
+        <div class="card-grid">
+          <div class="card fade-in">
+            <h3>Design &amp; Build</h3>
+            <p>I craft clean, responsive websites and applications using HTML, CSS, and JavaScript — with an eye for detail and usability.</p>
+          </div>
+          <div class="card fade-in">
+            <h3>Problem Solving</h3>
+            <p>I enjoy breaking down complex problems into elegant solutions, whether it's a UI challenge or a backend puzzle.</p>
+          </div>
+          <div class="card fade-in">
+            <h3>Always Learning</h3>
+            <p>Technology moves fast, and so do I. I'm constantly exploring new tools, frameworks, and ideas to stay sharp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Hima. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Himanagi" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hima-nagi-reddy/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Resume</h3>
+        <button type="button" class="modal-close" id="resume-close" aria-label="Close">&times;</button>
+      </div>
+      <iframe id="resume-frame" src="" title="Resume PDF"></iframe>
+      <div class="modal-footer">
+        <a href="resume/Hima_Nagi_Reddy_Resume.pdf" class="btn btn-outline" download>
+          Download
+        </a>
+        <a href="resume/Hima_Nagi_Reddy_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+          Open in New Tab
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

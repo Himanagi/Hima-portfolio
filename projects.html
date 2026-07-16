@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hima's Projects — Portfolio of web development work">
+  <title>Projects | Hima Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Hima<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="section-label">Projects</p>
+        <h1>Things I've built</h1>
+        <p>A selection of projects I've worked on — from experiments to production apps.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card-grid">
+
+          <div class="card project-card fade-in">
+
+            <div class="project-image">
+              <img src="images/ktp-preview.png" alt="Official Kappa Theta Pi Website">
+            </div>
+        
+            <div class="project-body">
+                <h3>Official Kappa Theta Pi Website</h3>
+        
+                <p>
+                    Designed and developed the official website for Kappa Theta Pi at
+                    UT Dallas, creating a modern experience for members, alumni, and
+                    prospective students.
+                </p>
+        
+                <div class="project-links">
+                    <a href="https://www.utdktp.org"
+                       target="_blank"
+                       rel="noopener">
+                        Visit Website →
+                    </a>
+                </div>
+        
+            </div>
+        
+        </div>
+
+        <div class="card project-card fade-in">
+
+          <div class="project-image">
+            <img src="images/trends-preview.png" alt="Trends Website">
+          </div>
+      
+          <div class="project-body">
+      
+              <h3>Trends</h3>
+      
+              <p>
+                  Trends helps UT Dallas students explore professors and courses
+                  through grade distributions, ratings, and search tools to make
+                  better registration decisions.
+              </p>
+      
+              <div class="project-links">
+                  <a href="https://trends.utdnebula.com"
+                     target="_blank"
+                     rel="noopener">
+                      Visit Website →
+                  </a>
+              </div>
+      
+          </div>
+      
+      </div>
+           
+
+        <div class="card project-card fade-in">
+
+          <div class="project-image">
+            <img src="images/capstoneproject_preview.png" alt="Research Project Title">
+          </div>
+
+          <div class="project-body">
+
+              <h3>Path-Based Prediction for Efficient 360° Video Streaming Using Deep Learning</h3>
+
+              <p>
+                Developed a deep learning model to predict users' future viewing direction in 360° videos using past head movement data. Trained and evaluated LSTM, GRU, and TCN models to improve prediction accuracy, enabling bandwidth-efficient streaming by delivering only the portion of the video the user is likely to view next.
+              </p>
+
+              <div class="project-links">
+                <button type="button" class="doc-trigger" data-doc="research/Final_report.pdf">
+                    View Research →
+                </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Hima. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal-overlay" id="doc-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="doc-modal-title">Document</h3>
+        <button type="button" class="modal-close" id="doc-close" aria-label="Close">&times;</button>
+      </div>
+      <iframe id="doc-frame" src="" title="Document preview"></iframe>
+      <div class="modal-footer">
+        <a href="#" id="doc-download" class="btn btn-outline" download>
+          Download
+        </a>
+        <a href="#" id="doc-newtab" class="btn btn-primary" target="_blank" rel="noopener">
+          Open in New Tab
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
