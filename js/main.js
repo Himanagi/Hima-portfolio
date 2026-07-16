@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   highlightActiveNav();
   initResumeModal();  
   initDocModal(); 
+  initTypewriter(); 
 });
 
 /* --- Mobile Navigation --- */
@@ -193,4 +194,22 @@ function initDocModal() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
   });
+}
+/* --- Typewriter Effect --- */
+function initTypewriter() {
+  const el = document.getElementById('typewriter');
+  if (!el) return;
+
+  const text = "Welcome to my portfolio";
+  let i = 0;
+
+  function type() {
+    if (i < text.length) {
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 100);
+    }
+  }
+
+  type();
 }
