@@ -1110,7 +1110,7 @@ section {
 
 .resume-preview-image {
   position: relative;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 5 / 4;
   background: #0f1730;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
