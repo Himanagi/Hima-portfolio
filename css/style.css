@@ -1242,6 +1242,27 @@ section {
   section {
     padding: 3.5rem 0;
   }
+
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .tech-stack {
+    width: 100%;
+    order: 1;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    order: 2;
+  }
+
+  .footer p {
+    order: 3;
+  }
 }
 
 @media (max-width: 480px) {
